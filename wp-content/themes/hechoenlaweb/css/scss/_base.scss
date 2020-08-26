@@ -1,0 +1,55 @@
+body{
+    margin: 0 auto;
+}
+.contener_negocio{
+    background-color: goldenrod;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+#masthead{
+    margin: 0 auto;
+    width: 100%;
+
+}
+.buscador_principal{
+    width: 90%;
+    border-radius: 12px;
+    position: relative;
+    padding: 32px;
+    margin: 20px auto;
+
+    input{
+        border-radius: 8px;
+        text-align: center;
+    }
+}
+.botonera_categorias{
+    margin: 20px auto;
+    align-items: flex-start;
+    button{
+        width: 90px;
+        height: 90px;
+        vertical-align: bottom;
+        font-size: 12px;
+    }
+}
+.anuncios_recientes, .articulos_blog_recientes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    h2{
+        grid-column: 1/5;
+    }
+}
+.anuncios_recientes__articulo, .articulos_blog_recientes__articulo{
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    h3{
+        padding: 10px;
+    }
+}
+
