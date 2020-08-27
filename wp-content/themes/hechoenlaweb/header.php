@@ -9,15 +9,17 @@
 <body>
 	<header>
 		<section class="container">
-			<div class="logo"><img src="<?php echo get_template_directory_uri()?>/assets/img/logo.jpg" alt="logo-hechoenlaweb"></div>
-			<div class="nav">
-				<?php wp_nav_menu(
-					array(
-						'theme_location' => 'top_menu',
-						'menu_class' => 'menu-principal',
-						'container_class' => 'container-menu',
-					)
-				); ?>
-			</div>
+			<div class="top-header">
+				<div class="logo"><img src="<?php echo get_template_directory_uri()?>/assets/img/logo_hechoenlaweb.png" alt="logo-hechoenlaweb"></div>
+				<nav class="nav-menu">
+					<?php wp_nav_menu(
+						array(
+							'theme_location' => 'top_menu',
+							'menu_class' => 'menu-principal',
+							'container_class' => 'container-menu',
+						)
+					); ?>
+				</nav>
+			</div>	
 		</section>
 	</header>
