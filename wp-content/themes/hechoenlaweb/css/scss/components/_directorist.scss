@@ -122,3 +122,110 @@
     border-radius: 0.3rem;
     height: 50px;
 }
+.atbd_all_categories{
+    text-align:center;
+    margin-bottom: 80px;
+}
+.atbd_generic_header{
+    display: none;
+}
+.ads-advaced--wrapper{
+    background:none;
+    /*Contenedor de buscador y de cards*/
+}
+
+/*busqueda por categoria*/
+.cat-box{
+    height: 150px;
+    background-color: #5b3a2d69;;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cat-info span{
+    display: none;
+}
+
+
+/* #directorist.atbd_wrapper .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+    /* justify-content: center; */
+   /*  max-width: 1200px; */
+    /* margin: 0 auto; */
+/* }  */
+.atbd_single_listing, .atbd_listing_card  {
+    background-color: lemonchiffon;
+    width: 300px;
+    margin:10px;
+}
+.atbd_badge{
+    /*personaliza botones tipo new y popular*/
+    background-color: antiquewhite;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: block;
+    width: fit-content;
+}
+.atbd_listing_thumbnail_area {
+    /*este es el figure dl card que lleva dentro botones fav y otros */
+    position: relative;
+}
+
+.atbd_listing_image{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.atbd_listing_info{
+    margin-top:300px;
+    padding: 0 15px; 
+}
+.atbd_upper_badge, .bh_only, .atbd_lower_badge, .atbdp_add_to_fav_listings{
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+}
+.atbd_lower_badge{
+
+/*contenedor de new y popular*/
+
+	.atbd_badge_popular {
+        background: none;
+
+	}
+	.atbd_badge_new{
+        background: none;
+	}
+
+
+}
+.atbd_fav_tooltip{
+    display: none;
+}
+
+.atbd_all_categories{
+    .row{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 10px;
+    }
+}
+.ads-advaced--wrapper{
+    .container-fluid{
+        .row{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+        }
+    }
+}

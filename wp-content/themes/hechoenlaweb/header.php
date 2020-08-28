@@ -10,7 +10,7 @@
 	<header>
 		<section class="container">
 			<div class="top-header">
-				<div class="logo"><img src="<?php echo get_template_directory_uri()?>/assets/img/logo_hechoenlaweb.png" alt="logo-hechoenlaweb"></div>
+				<div class="logo"><a href="<?php get_home_url();?>" title = "inicio"><img src="<?php echo get_template_directory_uri()?>/assets/img/logo_hechoenlaweb.png" alt="logo-hechoenlaweb"></a></div>
 				<nav class="nav-menu">
 					<?php wp_nav_menu(
 						array(

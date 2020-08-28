@@ -62,7 +62,8 @@ h1,h2,h3,h4,h5,h6,span,a{
 .container{
     position: relative;
     max-width: 100%;
-    margin:auto;
+    margin:0 auto;
+    padding: 0;
 }
 .top-header{
     display: grid;
@@ -78,6 +79,7 @@ h1,h2,h3,h4,h5,h6,span,a{
     .nav-menu{
         justify-content: end;
         display: grid;
+        margin:auto;
         .container-menu{
             ul{
                 list-style: none;
@@ -94,7 +96,7 @@ h1,h2,h3,h4,h5,h6,span,a{
         
     }
 }
-.portada-banner{
+.contenido_front_page{
     position: relative;
     height: 100vh;
     margin: auto;
@@ -105,7 +107,7 @@ h1,h2,h3,h4,h5,h6,span,a{
         font-size: 3rem;
         padding-top:90px;
     }
-    figure{
+    .banner-img{
         position: absolute;
         top: 0;
         bottom: 0;
@@ -116,6 +118,7 @@ h1,h2,h3,h4,h5,h6,span,a{
         z-index: -1;
         img{
             width: 100%;
+            height: auto;
         }
     }
 }

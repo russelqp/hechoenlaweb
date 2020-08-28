@@ -1,4 +1,27 @@
 <?php 
+
+add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
+function my_deregister_styles() {
+    wp_deregister_style( 'atbdp-admin-bootstrap-style' );
+    wp_deregister_style( 'atbdp-font-awesome' );
+    wp_deregister_style( 'atbdp-line-awesome' );
+    //wp_deregister_style( 'sweetalertcss' );
+    //wp_deregister_style( 'select2style' );
+    //wp_deregister_style( 'custom-colors' );
+    //wp_deregister_style( 'aatbdp-custom-field' );
+    //wp_deregister_style( 'atbdp-admin' );
+    //wp_deregister_style( 'select2style' );
+    //wp_deregister_style( 'atbdp-custom-field' );
+    wp_deregister_style( 'bootstrap' );
+    wp_deregister_style( 'atbdp-bootstrap-style-rtl' );
+    wp_deregister_style( 'atbd_googlefonts' );
+    //wp_deregister_style( 'atbdp-style' );
+    //wp_deregister_style( 'atmodal' );
+    //wp_deregister_style( 'slickcss' );
+    wp_deregister_style( 'atbdp-bootstrap-style' );
+    
+}
+
     function init_template(){
 
         add_theme_support( 'post-thumbnails' );

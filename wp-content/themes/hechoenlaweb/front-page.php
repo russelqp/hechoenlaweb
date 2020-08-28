@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
     <main class="container">
-        <div class="portada-banner">
-    
-            <?php 
+<!--         <div class="portada-banner">
+        </div> -->
+        <div class="contenido_front_page">
+        <?php 
                 if(have_posts()){
                     while(have_posts()){
                         the_post(); ?>
@@ -14,12 +15,12 @@
                     <?php }
                 }
             ?>
-         </div>
+        </div>
 
-        <div class="lista-productos">
+<!--         <div class="lista-productos">
             <h2 class="lista-productos__h2">Productos</h2>
             <?php
-                $args = array(
+              /*   $args = array(
                     'post_type' => 'producto',
                     'post_per_page' => -1,
                     'order' => 'ASC',
@@ -29,23 +30,23 @@
 
                 if($productos->have_posts()){
                     while($productos->have_posts()){
-                        $productos->the_post();
+                        $productos->the_post(); */
                     ?>
                    
             <div class="producto">
                         <figure>
-                            <?php the_post_thumbnail( 'large' ); ?>
+                            <?php/*  the_post_thumbnail( 'large' ); */ ?>
                         </figure>
                         <h4>
-                            <a href="<?php the_permalink() ; ?>"><?php the_title();?></a>
+                            <a href="<?php /* the_permalink() ; ?>"><?php the_title(); */?></a>
                         </h4>
             </div>
 
-                <?php }
+                <?php /* } */
 
-                }
+                /* } */
             ?>
-        </div>
+        </div> -->
     </main>
 
 
